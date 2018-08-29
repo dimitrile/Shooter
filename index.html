@@ -80,7 +80,7 @@ body {
    			greenEnemies.physicsBodyType = Phaser.Physics.ARCADE;
  			greenEnemies.createMultiple(5, 'enemy-green');
    			greenEnemies.setAll('anchor.x', 0.5);
-   			greenEnemies.setAll('anchor.y', 0.5);
+   			greenEnemies.setAll('anchor.y', 1);
    			greenEnemies.setAll('scale.x', 0.5);
    			greenEnemies.setAll('scale.y', 0.5);
 			greenEnemies.setAll('angle', 180);
@@ -191,9 +191,9 @@ body {
    			var enemy = greenEnemies.getFirstExists(false);
     			if (enemy) {
        				 enemy.reset(game.rnd.integerInRange(0, game.width), -20);
-       				 enemy.body.velocity.x = game.rnd.integerInRange(-300, 300);
-        			 enemy.body.velocity.y = ENEMY_SPEED;
-      				 enemy.body.drag.x = 100;
+       				 enemy.body.velocity.y = game.rnd.integerInRange(-300, 300);
+        			 enemy.body.velocity.x = ENEMY_SPEED;
+      				 enemy.body.drag.y = 100;
    				   }
 
    			 //  Send another enemy soon
