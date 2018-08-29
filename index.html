@@ -23,7 +23,6 @@ body {
 		});
 
 		var player;
-		var greenEnemies;
 		var starfield;
 		var cursors;
 		var bank;
@@ -46,7 +45,6 @@ body {
 			game.load.image('starfield', 'assets/starfield.png');
 			game.load.image('ship', 'assets/ship.png');
 			game.load.image('bullet', 'assets/bullets/bullet.png');
-			game.load.image('enemy-green', '/assets/enemy-green.png');
 
 		}
 
@@ -74,8 +72,6 @@ body {
 			player.body.maxVelocity.setTo(MAXSPEED, MAXSPEED);
 			player.body.drag.setTo(DRAG, DRAG);
 			
-			
-
 			//  And some controls to play the game with
 			cursors = game.input.keyboard.createCursorKeys();
 			fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
