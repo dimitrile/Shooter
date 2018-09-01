@@ -46,7 +46,7 @@ body {
 			game.load.image('starfield', '/assets/starfield.png');
 			game.load.image('ship', '/assets/ship.png');
 			game.load.image('bullet', '/assets/bullets/bullet.png');
-			game.load.image('ememy2', '/assets/enemies/enemy2.png');
+			game.load.image('enemy2', '/assets/enemies/enemy2.png');
 			
 		}
 
@@ -78,7 +78,7 @@ body {
     			greenEnemies = game.add.group();
     			greenEnemies.enableBody = true;
     			greenEnemies.physicsBodyType = Phaser.Physics.ARCADE;
-    			greenEnemies.createMultiple(5, 'enemy-green');
+    			greenEnemies.createMultiple(5, 'enemy2');
     			greenEnemies.setAll('anchor.x', 0.5);
     			greenEnemies.setAll('anchor.y', 0.5);
     			greenEnemies.setAll('scale.x', 0.5);
